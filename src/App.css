@@ -1,0 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    box-sizing: border-box;
+}
