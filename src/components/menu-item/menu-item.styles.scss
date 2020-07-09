@@ -11,15 +11,15 @@
     overflow: hidden;
 
     &.large {
-        height: 380px;
+        height: 38rem;
     }
   
     &:first-child {
-      margin-right: 7.5px;
+      margin-right: .75rem;
     }
   
     &:last-child {
-      margin-left: 7.5px;
+      margin-left: .75rem;
     }
 
     &:hover {
@@ -44,8 +44,8 @@
     }
   
     .content {
-      height: 90px;
-      padding: 0 25px;
+      height: 9rem;
+      padding: 0 2.5rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -56,15 +56,15 @@
   
       .title {
         font-weight: bold;
-        margin-bottom: 6px;
-        font-size: 22px;
+        margin-bottom: .6rem;
+        font-size: 2.2rem;
         color: #4a4a4a;
         text-transform: uppercase;
       }
   
       .subtitle {
         font-weight: lighter;
-        font-size: 16px;
+        font-size: 1.6rem;
       }
     }
 }
