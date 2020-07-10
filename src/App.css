@@ -14,3 +14,8 @@ body {
     box-sizing: border-box;
     padding: 2rem 4rem;
 }
+
+a {
+    text-decoration: none;
+    color: #000;
+}
