@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 7.5px 15px;
-    border: 1.5px solid black; // 1.5px makes the gap between bg-image and the border disappear in chrome on Win10, at the same time not changing anything in firefox comparing to 1px
+    border: 1px solid black; // 1.5px makes the gap between bg-image and the border disappear in chrome on Win10, at the same time not changing anything in firefox comparing to 1px
     position: relative;
     overflow: hidden;
 
