@@ -8,12 +8,13 @@ import './header.styles.scss'
 const Header = () => (
     <header className='header'>
         <Link className='logo-container' to='/'>
-            <Logo className='logo'/>
+            <Logo className='logo' title='Crown Logo'/>
         </Link>
        
         <div className='options'>
             <Link className='option' to='/shop'>SHOP</Link>
             <Link className='option' to='/'>CONTACT</Link>
+            <Link className='option' to='/signin'>SIGN IN</Link>
         </div>
     </header>
 );
