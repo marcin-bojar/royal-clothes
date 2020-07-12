@@ -9,6 +9,7 @@ $color-black: #111;
 
 .group {
     position: relative;
+    margin: 4rem 0;
 
     .form-input {
         outline: none;
@@ -27,7 +28,11 @@ $color-black: #111;
 
         &:focus ~ .form-input-label {
             @include shrinkLabel();
-        } 
+        }
+
+        &[type=password] {
+            letter-spacing: .3rem;
+        }
     }
 
     .form-input-label {
