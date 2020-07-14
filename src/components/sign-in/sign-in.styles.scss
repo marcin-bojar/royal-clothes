@@ -1,6 +1,7 @@
 .sign-in {
     padding: 2.5rem;
     margin: 2.5rem;
+    width: 30vw;
 
     h2 {
         font-size: 3rem;
@@ -13,6 +14,7 @@
     }
 
     .buttons-wrapper {
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
