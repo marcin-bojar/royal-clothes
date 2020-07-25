@@ -1,0 +1,25 @@
+.cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: 1.5rem 2.5rem;
+    cursor: pointer;
+
+    &__icon {
+        width: 2.6rem;
+        height: 2.6rem;  
+    }
+
+    &__count {
+        position: absolute;
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+}
+
