@@ -17,9 +17,9 @@
     flex-direction: column;
     overflow-y: scroll;
     
-    &::-webkit-scrollbar {
-        visibility: hidden;
-    }
+    // &::-webkit-scrollbar {
+    //     visibility: hidden;
+    // }
   }
 
   button {
