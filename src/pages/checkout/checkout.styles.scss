@@ -1,0 +1,39 @@
+.checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 2rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #000;
+  }
+
+  &__block {
+    width: 23%;
+
+    &:last-child {
+      width: 8%;
+      text-align: end;
+    }
+  }
+
+  &__items {
+    margin: 3rem 0;
+    width: 100%;
+    min-height: 20rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #000;
+  }
+
+  &__total {
+    font-size: 5rem;
+    align-self: flex-end;
+  }
+}
