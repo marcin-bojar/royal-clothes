@@ -31,7 +31,7 @@ const Checkout = ({ cartItems, total }) => (
     </header>
     <div className="checkout__items">
       {cartItems.length
-        ? cartItems.map(el => <CheckoutItem key={el.id} item={el} />)
+        ? cartItems.map(el => <CheckoutItem key={el.id} cartItem={el} />)
         : null}
     </div>
 
