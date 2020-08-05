@@ -1,43 +1,42 @@
 .collection-item {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 22%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22vw;
 
-    &:hover {
-        .image {
-            opacity: .85;
-        }
-
-        .custom-button {
-            display: block;
-        }
-    }
-
-    &--footer {
-        height: 5%;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
+  &:hover {
     .image {
-        height: 95%;
-        width: 100%;
-        margin-bottom: .5rem;
-    }
-
-    .price,
-    .name {
-        font-size: 2rem;
+      opacity: 0.85;
     }
 
     .custom-button {
-        position: absolute;
-        top: 75%;
-        width: 80%;
-        opacity: .85;
+      display: block;
     }
+  }
 
+  &--footer {
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .image {
+    height: 95%;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .price,
+  .name {
+    font-size: 2rem;
+  }
+
+  .custom-button {
+    position: absolute;
+    top: 75%;
+    width: 80%;
+    opacity: 0.85;
+  }
 }
