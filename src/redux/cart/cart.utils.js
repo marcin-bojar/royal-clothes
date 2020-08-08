@@ -15,7 +15,6 @@ export const addItemToCart = (cartItems, itemToAdd) => {
 };
 
 export const removeItemFromCart = (cartItems, itemToRemove) => {
-  console.log('yep');
   if (itemToRemove.quantity === 1) {
     return cartItems.filter(cartItem => cartItem.id !== itemToRemove.id);
   }
