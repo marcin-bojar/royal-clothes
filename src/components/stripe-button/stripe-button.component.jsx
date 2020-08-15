@@ -16,7 +16,7 @@ const StripeButton = ({ price }) => {
       amount={stripePrice}
       token={onToken}
       stripeKey={publicKey}
-      name="CRWN Clothing Ltd."
+      name="Royal Clothes Ltd."
       description={`Your total price is $${price}`}
       shippingAddress
       billingAddress
