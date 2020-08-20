@@ -13,7 +13,7 @@ import {
 
 export function* fetchCollectionsAsync() {
   try {
-    const collectionsRef = firestore.collection('collections');
+    const collectionsRef = yield firestore.collection('collections');
     const snapshot = yield collectionsRef.get();
     const collectionsMap = yield call(
       convertCollectionsSnapshotToMap,
