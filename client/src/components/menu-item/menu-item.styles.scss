@@ -1,70 +1,74 @@
 .menu-item {
-    min-width: 30%;
-    height: 240px;
-    flex: 1 1 auto;
+  min-width: 30%;
+  height: 24rem;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 7.5px 15px;
+  border: 1.6px solid black; // 1.5px makes the gap between bg-image and the border disappear in chrome on Win10, at the same time not changing anything in firefox comparing to 1px
+  position: relative;
+  overflow: hidden;
+
+  &.large {
+    height: 38rem;
+
+    @media only screen and (max-width: 50em) {
+      height: 24rem;
+    }
+  }
+
+  &:first-child {
+    margin-right: 0.75rem;
+  }
+
+  &:last-child {
+    margin-left: 0.75rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    & .background-image {
+      transform: scale(1.1);
+      transition: transform 6s cubic-bezier(0.33, 0.96, 0.69, 1.68);
+    }
+
+    & .content {
+      opacity: 0.9;
+    }
+  }
+
+  .background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .content {
+    height: 9rem;
+    padding: 0 2.5rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 7.5px 15px;
-    border: 1.6px solid black; // 1.5px makes the gap between bg-image and the border disappear in chrome on Win10, at the same time not changing anything in firefox comparing to 1px
-    position: relative;
-    overflow: hidden;
+    border: 1px solid #000;
+    background-color: #fff;
+    opacity: 0.7;
 
-    &.large {
-        height: 38rem;
-    }
-  
-    &:first-child {
-      margin-right: .75rem;
-    }
-  
-    &:last-child {
-      margin-left: .75rem;
+    .title {
+      font-weight: bold;
+      margin-bottom: 0.6rem;
+      font-size: 2.2rem;
+      color: #4a4a4a;
+      text-transform: uppercase;
     }
 
-    &:hover {
-      cursor: pointer;
-
-      & .background-image {
-        transform: scale(1.1);
-        transition: transform 6s cubic-bezier(.33,.96,.69,1.68);
-      }
-
-      & .content {
-        opacity: .9;
-      }
+    .subtitle {
+      font-weight: lighter;
+      font-size: 1.6rem;
     }
-
-    .background-image {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-position: center;
-      background-size: cover;
-    }
-  
-    .content {
-      height: 9rem;
-      padding: 0 2.5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid #000;
-      background-color: #fff;
-      opacity: .7;
-  
-      .title {
-        font-weight: bold;
-        margin-bottom: .6rem;
-        font-size: 2.2rem;
-        color: #4a4a4a;
-        text-transform: uppercase;
-      }
-  
-      .subtitle {
-        font-weight: lighter;
-        font-size: 1.6rem;
-      }
-    }
+  }
 }
