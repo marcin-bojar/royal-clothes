@@ -9,6 +9,10 @@ const OptionContainerStyles = css`
   @media only screen and (max-width: 50em) {
     margin: 1rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 1.9rem;
+  }
 `;
 
 export const HeaderContainer = styled.div`
@@ -20,7 +24,7 @@ export const HeaderContainer = styled.div`
   margin-bottom: 5rem;
 
   @media only screen and (max-width: 50em) {
-    height: 5rem;
+    height: 6rem;
     margin-bottom: 3rem;
   }
 `;
@@ -36,6 +40,10 @@ export const LogoContainer = styled(Link)`
     width: 5rem;
     margin-left: 1rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    width: 4rem;
+  }
 `;
 
 export const OptionsContainer = styled.div`
@@ -47,7 +55,7 @@ export const OptionsContainer = styled.div`
   text-transform: uppercase;
 
   @media only screen and (max-width: 50em) {
-    width: 80%;
+    width: 90%;
   }
 `;
 

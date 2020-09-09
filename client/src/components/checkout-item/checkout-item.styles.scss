@@ -7,6 +7,10 @@
   font-size: 2.2rem;
   border-bottom: 1px solid #000;
 
+  @media only screen and (max-width: 50em) {
+    font-size: 2rem;
+  }
+
   &__img-container,
   &__name,
   &__quantity,
@@ -16,6 +20,10 @@
 
   &__img {
     width: 80%;
+
+    @media only screen and (max-width: 50em) {
+      width: 95%;
+    }
   }
 
   &__quantity {
@@ -29,7 +37,15 @@
   }
 
   &__price {
-    padding: 0 0.4rem;
+    padding: 0 0.6rem;
+
+    @media only screen and (max-width: 50em) {
+      padding: 0 1rem;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      padding: 0 2rem;
+    }
   }
 
   &__remove {

@@ -6,6 +6,10 @@
   width: 60%;
   margin: 0 auto;
 
+  @media only screen and (max-width: 50em) {
+    width: 90%;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -13,6 +17,10 @@
     font-size: 2rem;
     padding: 1.5rem 0;
     border-bottom: 1px solid #000;
+
+    @media only screen and (max-width: 31.25em) {
+      font-size: 1.8rem;
+    }
   }
 
   &__block {
@@ -21,6 +29,20 @@
     &:last-child {
       width: 8%;
       text-align: end;
+
+      @media only screen and (max-width: 31.25em) {
+        width: 14%;
+      }
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      &:first-child {
+        width: 20%;
+      }
+
+      &:nth-of-type(2) {
+        width: 19%;
+      }
     }
   }
 
@@ -34,6 +56,10 @@
   &__total {
     font-size: 5rem;
     align-self: flex-end;
+
+    @media only screen and (max-width: 31.25em) {
+      font-size: 4rem;
+    }
   }
 
   .test-warning {
