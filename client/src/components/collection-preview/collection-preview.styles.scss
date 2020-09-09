@@ -22,5 +22,9 @@
       gap: 2rem;
       justify-items: center;
     }
+
+    @media only screen and (max-width: 31.25em) {
+      grid-template-columns: 1fr;
+    }
   }
 }

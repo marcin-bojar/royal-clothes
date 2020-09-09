@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Open Sans Condensed', sans-serif;
         font-size: 1.6rem;
         box-sizing: border-box;
-        padding: 2rem 4rem;
+        padding: 2rem 3rem;
 
         @media only screen and (max-width: 50em) {
             padding: 1rem;

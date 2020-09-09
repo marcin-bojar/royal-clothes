@@ -34,6 +34,7 @@ export const LogoContainer = styled(Link)`
 
   @media only screen and (max-width: 50em) {
     width: 5rem;
+    margin-left: 1rem;
   }
 `;
 
