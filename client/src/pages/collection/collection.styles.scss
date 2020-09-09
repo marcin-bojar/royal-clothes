@@ -2,13 +2,22 @@
   display: flex;
   flex-direction: column;
 
-  &__items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+  @media only screen and (max-width: 50em) {
+    align-items: center;
+  }
 
-    & .collection-item {
-      margin: 0 1rem 3rem 1rem;
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    justify-content: center;
+
+    @media only screen and (max-width: 50em) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      grid-template-columns: 1fr;
     }
   }
 

@@ -27,23 +27,26 @@ export const HeaderContainer = styled.div`
 
 export const LogoContainer = styled(Link)`
   height: 100%;
+  width: 7rem;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @media only screen and (max-width: 50em) {
-    padding: 10px;
+    width: 5rem;
   }
 `;
 
 export const OptionsContainer = styled.div`
+  height: 100%;
+  width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 100%;
   text-transform: uppercase;
 
   @media only screen and (max-width: 50em) {
+    width: 80%;
   }
 `;
 

@@ -30,6 +30,10 @@ const InvertedButtonStyles = css`
     color: #fff;
     border: none;
   }
+
+  @media only screen and (max-width: 50em) {
+    display: block;
+  }
 `;
 
 const GoogleButtonStyles = css`
@@ -57,4 +61,8 @@ export const CustomButtonContainer = styled.button`
   outline: none;
 
   ${importButtonStyles}
+
+  @media only screen and (max-width: 50em) {
+    min-width: unset;
+  }
 `;
