@@ -52,14 +52,14 @@ function* emailSignIn({ payload: { email, password } }) {
 function* signUp({ payload: { displayName, email, password } }) {
   try {
     const { user } = yield auth.createUserWithEmailAndPassword(email, password);
-    yield put(singUpSuccess({ user, additinalData: { displayName } }));
+    yield put(singUpSuccess({ user, additionalData: { displayName } }));
   } catch (error) {
     yield put(singUpFailure(error));
   }
 }
 
-function* signInOnSignUp({ payload: { user, additinalData } }) {
-  yield getSnapshotFromUserAuth(user, additinalData);
+function* signInOnSignUp({ payload: { user, additionalData } }) {
+  yield getSnapshotFromUserAuth(user, additionalData);
 }
 
 function* signOut() {

@@ -31,26 +31,18 @@
       text-align: end;
 
       @media only screen and (max-width: 31.25em) {
-        width: 14%;
+        width: 12%;
       }
     }
 
     @media only screen and (max-width: 31.25em) {
-      &:first-child {
-        width: 20%;
-      }
-
-      &:nth-of-type(2) {
-        width: 19%;
-      }
+      width: 22%;
     }
   }
 
   &__items {
-    // margin: 3rem 0;
     width: 100%;
     min-height: 20rem;
-    // padding: 1.5rem 0;
   }
 
   &__total {

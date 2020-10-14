@@ -18,6 +18,12 @@
     width: 23%;
   }
 
+  &__img-container {
+    @media only screen and (max-width: 31.25em) {
+      width: 27%;
+    }
+  }
+
   &__img {
     width: 80%;
 
