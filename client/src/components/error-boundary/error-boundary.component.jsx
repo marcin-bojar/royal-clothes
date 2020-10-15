@@ -8,22 +8,35 @@ class ErrorBoundary extends React.Component {
 
     this.state = {
       hasError: false,
+      error: null,
+      errorinfo: null,
     };
   }
 
   static getDerivedStateFromError(error) {
-    return { hasError: true };
+    return { hasError: true, error };
   }
 
   componentDidCatch(error, errorinfo) {
-    console.log(errorinfo);
+    this.setState({ errorinfo });
   }
 
   render() {
-    if (this.state.hasError) {
+    const { hasError, errorinfo } = this.state;
+    if (hasError) {
       return (
         <div className="error-boundary">
-          <h1>Ups, we've got problem...</h1>
+          <div className="error-boundary__img-container">
+            <img
+              className="error-boundary__img"
+              src="https://i.imgur.com/A040Lxr.png"
+            />
+          </div>
+          <h3 className="error-boundary__title">Ups, we've got problem...</h3>
+          <p className="error-boundary__info">
+            {/* info not in production! */}
+            {errorinfo && errorinfo.componentStack.toString()}
+          </p>
         </div>
       );
     }
