@@ -23,13 +23,6 @@ const SignIn = ({ googleSignInStart, emailSignInStart }) => {
     e.preventDefault();
 
     emailSignInStart(email, password);
-
-    // try {
-    //   await auth.signInWithEmailAndPassword(email, password);
-    //   this.setState({ email: '', password: '' });
-    // } catch (error) {
-    //   alert(error);
-    // }
   };
 
   const handleChange = e => {

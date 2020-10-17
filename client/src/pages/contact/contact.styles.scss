@@ -1,0 +1,28 @@
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 4rem;
+
+    @media only screen and (max-width: 75em) {
+      justify-content: space-between;
+    }
+
+    @media only screen and (max-width: 50em) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

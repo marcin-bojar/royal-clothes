@@ -1,0 +1,40 @@
+.contact-card {
+  &__details {
+    font-size: 2.5rem;
+    width: 30vw;
+
+    @media only screen and (max-width: 75em) {
+      width: 35vw;
+    }
+
+    @media only screen and (max-width: 50em) {
+      width: 60vw;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      width: 80vw;
+    }
+
+    @media only screen and (max-width: 21.875em) {
+      width: 90vw;
+    }
+  }
+
+  &__item {
+    font-style: normal;
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid #333;
+    margin-bottom: 3rem;
+
+    &--author {
+      font-size: 2.75rem;
+      font-weight: bold;
+      text-align: center;
+      border: none;
+    }
+
+    & > i {
+      margin-right: 1rem;
+    }
+  }
+}

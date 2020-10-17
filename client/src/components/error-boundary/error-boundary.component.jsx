@@ -30,13 +30,20 @@ class ErrorBoundary extends React.Component {
             <img
               className="error-boundary__img"
               src="https://i.imgur.com/A040Lxr.png"
+              alt="This page is lost in space"
             />
           </div>
           <h3 className="error-boundary__title">Ups, we've got problem...</h3>
           <p className="error-boundary__info">
             {/* info not in production! */}
-            {errorinfo && errorinfo.componentStack.toString()}
+            {/* {errorinfo && errorinfo.componentStack.toString()} */}
           </p>
+          <button
+            className="error-boundary__refresh-btn"
+            onClick={() => window.location.reload()}
+          >
+            Refresh the page
+          </button>
         </div>
       );
     }

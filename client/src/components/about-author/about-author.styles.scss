@@ -1,0 +1,40 @@
+.about-author {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40vw;
+
+  @media only screen and (max-width: 75em) {
+    width: 45vw;
+  }
+
+  @media only screen and (max-width: 50em) {
+    margin-top: 5rem;
+    width: 80vw;
+    align-items: center;
+  }
+
+  &__img {
+    width: 40%;
+    margin: 0 2.5rem 1.5rem 0;
+
+    @media only screen and (max-width: 75em) {
+      width: 55%;
+    }
+  }
+
+  &__text {
+    font-size: 2.25rem;
+    line-height: 1.6;
+    width: 95%;
+
+    @media only screen and (max-width: 50em) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      width: 95%;
+    }
+  }
+}
