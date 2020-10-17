@@ -19,22 +19,4 @@
       width: 90vw;
     }
   }
-
-  &__item {
-    font-style: normal;
-    padding: 0.5rem 2rem;
-    border-bottom: 1px solid #333;
-    margin-bottom: 3rem;
-
-    &--author {
-      font-size: 2.75rem;
-      font-weight: bold;
-      text-align: center;
-      border: none;
-    }
-
-    & > i {
-      margin-right: 1rem;
-    }
-  }
 }
