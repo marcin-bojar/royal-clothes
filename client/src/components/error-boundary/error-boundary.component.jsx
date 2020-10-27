@@ -22,7 +22,7 @@ class ErrorBoundary extends React.Component {
   }
 
   render() {
-    const { hasError, errorinfo } = this.state;
+    const { hasError /*errorinfo*/ } = this.state;
     if (hasError) {
       return (
         <div className="error-boundary">
