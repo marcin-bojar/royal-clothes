@@ -73,6 +73,23 @@ export const convertCollectionsSnapshotToMap = collections => {
   }, {});
 };
 
+export const getCartRefFromFirebase = async userId => {
+  const cartRef = firestore.doc(`/carts/${userId}`);
+  const cartSnapshot = await cartRef.get();
+
+  if (!cartSnapshot.exists) {
+    try {
+      await cartRef.set({
+        cartItems: [],
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  return cartRef;
+};
+
 export const getCurrentUser = () => {
   return new Promise((resolve, reject) => {
     const unsubscribe = auth.onAuthStateChanged(userAuth => {
