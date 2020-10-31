@@ -23,7 +23,11 @@ export const clearCart = () => ({
   type: CartActionTypes.CLEAR_CART,
 });
 
-export const setCartFromDB = cartItems => ({
-  type: CartActionTypes.SET_CART_FROM_DB,
+export const setUserCart = cartItems => ({
+  type: CartActionTypes.SET_USER_CART,
   payload: cartItems,
+});
+
+export const mergeCartsSuccess = () => ({
+  type: CartActionTypes.MERGE_CARTS_SUCCESS,
 });

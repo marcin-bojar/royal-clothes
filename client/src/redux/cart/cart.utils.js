@@ -27,7 +27,6 @@ export const removeItemFromCart = (cartItems, itemToRemove) => {
 };
 
 export const mergeTwoCarts = (cart1, cart2) => {
-  console.log(cart1, cart2);
   if (cart1.length === 0) return cart2;
   if (cart2.length === 0) return cart1;
 
