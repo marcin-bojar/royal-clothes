@@ -16,6 +16,7 @@ import { selectCartItems } from './cart.selectors';
 import { selectCurrentUser } from '../user/user.selectors';
 
 import { getCartRefFromFirebase } from '../../firebase/firebase.utils';
+import { mergeTwoCarts } from './cart.utils';
 
 function* clearCartOnSignOut() {
   yield put(clearCart());
@@ -25,9 +26,11 @@ function* getUserCartFromDB({ payload: user }) {
   try {
     const cartRef = yield getCartRefFromFirebase(user.id);
     const cartSnapshot = yield cartRef.get();
-    const cartItems = yield select(selectCartItems);
+    const cartItems = yield select(selectCartItems); // cartItems stored in redux
+    const firebaseCartItems = yield cartSnapshot.data().cartItems; // cartItems stored in Firebase
     // Merge cart from DB with current cart from redux store
-    yield put(setCartFromDB([...cartItems, ...cartSnapshot.data().cartItems]));
+    const mergedCart = mergeTwoCarts(cartItems, firebaseCartItems);
+    yield put(setCartFromDB(mergedCart));
   } catch (err) {
     console.log(err);
   }
